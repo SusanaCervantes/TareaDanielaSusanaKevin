@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea.Controller.RegistroDeEquiposController">
+   <children>
+      <Label text="Registro De Cancha">
+         <StackPane.margin>
+            <Insets bottom="350.0" />
+         </StackPane.margin>
+      </Label>
+      <AnchorPane prefHeight="329.0" prefWidth="535.0">
+         <StackPane.margin>
+            <Insets top="50.0" />
+         </StackPane.margin>
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="34.0" prefHeight="296.0" prefWidth="170.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="34.0">
+               <children>
+                  <JFXPasswordField layoutX="10.0" layoutY="55.0" prefHeight="25.0" prefWidth="150.0" promptText="Contraseña" />
+                  <JFXPasswordField layoutX="10.0" layoutY="90.0" prefHeight="25.0" prefWidth="150.0" promptText="Veridicación de contraseña" />
+                  <JFXTextField layoutX="10.0" layoutY="20.0" prefHeight="25.0" prefWidth="150.0" promptText="Nombre de usuario" />
+               </children>
+            </AnchorPane>
+            <JFXButton layoutX="456.0" layoutY="290.0" text="Volver" />
+            <AnchorPane layoutX="381.0" layoutY="32.0" prefHeight="223.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="21.0" layoutY="6.0" text="Horario (formato de 24 horas)" />
+                  <JFXTextField layoutX="31.0" layoutY="23.0" prefHeight="25.0" prefWidth="20.0" />
+                  <JFXButton layoutX="15.0" layoutY="128.0" text="Verificar horario" />
+                  <Label layoutX="14.0" layoutY="27.0" prefHeight="17.0" prefWidth="20.0" text="De" />
+                  <JFXTextField layoutX="61.0" layoutY="23.0" prefHeight="25.0" prefWidth="20.0" />
+                  <Label layoutX="52.0" layoutY="27.0" prefHeight="17.0" prefWidth="11.0" text="a" />
+                  <Label layoutX="81.0" layoutY="27.0" prefHeight="17.0" prefWidth="104.0" text="de lunes a viernes." />
+                  <JFXTextField layoutX="31.0" layoutY="57.0" prefHeight="25.0" prefWidth="20.0" />
+                  <Label layoutX="14.0" layoutY="61.0" prefHeight="17.0" prefWidth="20.0" text="De" />
+                  <JFXTextField layoutX="61.0" layoutY="57.0" prefHeight="25.0" prefWidth="20.0" />
+                  <Label layoutX="52.0" layoutY="61.0" prefHeight="17.0" prefWidth="11.0" text="a" />
+                  <Label layoutX="81.0" layoutY="61.0" prefHeight="17.0" prefWidth="104.0" text="los sabados." />
+                  <JFXTextField layoutX="32.0" layoutY="91.0" prefHeight="25.0" prefWidth="20.0" />
+                  <Label layoutX="15.0" layoutY="95.0" prefHeight="17.0" prefWidth="20.0" text="De" />
+                  <JFXTextField layoutX="62.0" layoutY="91.0" prefHeight="25.0" prefWidth="20.0" />
+                  <Label layoutX="53.0" layoutY="95.0" prefHeight="17.0" prefWidth="11.0" text="a" />
+                  <Label layoutX="82.0" layoutY="95.0" prefHeight="17.0" prefWidth="104.0" text="los domingos." />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="211.0" layoutY="40.0" prefHeight="160.0" prefWidth="170.0">
+               <children>
+                  <JFXTextField layoutX="10.0" layoutY="14.0" prefHeight="25.0" prefWidth="150.0" promptText="Nombre de cancha" />
+                  <JFXTextField layoutX="10.0" layoutY="49.0" prefHeight="25.0" prefWidth="150.0" promptText="# de jugadores por equipo" />
+                  <JFXTextField layoutX="10.0" layoutY="84.0" prefHeight="25.0" prefWidth="150.0" promptText="Cel/Tel" />
+               </children>
+            </AnchorPane>
+            <JFXDatePicker fx:id="prueba" layoutX="147.0" layoutY="255.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

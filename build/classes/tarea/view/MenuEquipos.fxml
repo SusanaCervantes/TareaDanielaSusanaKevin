@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stp_root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea.Controller.MenuEquiposController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" stylesheets="@Style.css">
+         <children>
+            <HBox prefHeight="190.0" prefWidth="619.0">
+               <children>
+                  <JFXButton ellipsisString="" onAction="#evt_info" prefHeight="130.0" prefWidth="185.0">
+                     <HBox.margin>
+                        <Insets bottom="30.0" left="100.0" right="20.0" top="30.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../fonds/5745-200.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton ellipsisString="" onAction="#evt_alquiler" prefHeight="142.0" prefWidth="178.0">
+                     <HBox.margin>
+                        <Insets bottom="30.0" left="70.0" right="20.0" top="30.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../fonds/create-event-calendar-date-book-reservation-512.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="194.0" prefWidth="619.0">
+               <children>
+                  <JFXButton ellipsisString="" onAction="#evt_ranking" prefHeight="134.0" prefWidth="182.0">
+                     <HBox.margin>
+                        <Insets bottom="30.0" left="100.0" right="20.0" top="30.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../fonds/rankings-512.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton ellipsisString="" onAction="#evt_consulta" prefHeight="164.0" prefWidth="162.0">
+                     <HBox.margin>
+                        <Insets bottom="30.0" left="70.0" right="20.0" top="30.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../fonds/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

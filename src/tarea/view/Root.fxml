@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="root" minHeight="480.0" minWidth="-Infinity" prefHeight="611.0" prefWidth="982.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea.Controller.RootController">
+   <children>
+      <ImageView fx:id="background" fitHeight="229.0" fitWidth="325.0" pickOnBounds="true" />
+      <BorderPane prefHeight="459.0" prefWidth="869.0">
+         <center>
+            <StackPane prefHeight="540.0" prefWidth="759.0" stylesheets="@Style.css" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

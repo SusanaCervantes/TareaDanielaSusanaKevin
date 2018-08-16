@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stp_root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea.Controller.RankingController">
+   <children>
+      <VBox prefHeight="441.0" prefWidth="442.0">
+         <StackPane.margin>
+            <Insets right="150.0" />
+         </StackPane.margin>
+         <children>
+            <TableView fx:id="tb_Ranking" prefHeight="441.0" prefWidth="410.0">
+              <columns>
+                <TableColumn fx:id="tc_Equipo" prefWidth="200.0" text="Equipo" />
+                <TableColumn fx:id="tc_Puntos" prefWidth="100.0" text="Puntos" />
+                  <TableColumn fx:id="tc_Promedio" prefWidth="100.0" text="Promedio " />
+              </columns>
+               <VBox.margin>
+                  <Insets right="70.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <StackPane.margin>
+            <Insets bottom="300.0" left="400.0" />
+         </StackPane.margin>
+         <children>
+            <JFXButton onAction="#evt_Ordenar" prefHeight="25.0" prefWidth="82.0" text="Ordenar">
+               <HBox.margin>
+                  <Insets left="20.0" top="40.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton ellipsisString="" onAction="#evt_volver" prefHeight="25.0" prefWidth="74.0" text="Atrás">
+               <HBox.margin>
+                  <Insets left="20.0" top="40.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

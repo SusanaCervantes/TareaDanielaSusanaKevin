@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea.Controller.ScheduleTeamsController">
+   <children>
+      <VBox>
+         <children>
+            <Label alignment="CENTER" prefHeight="69.0" prefWidth="951.0" text="Horario canchas" />
+            <HBox prefHeight="615.0" prefWidth="937.0" spacing="10.0">
+               <children>
+                  <VBox prefHeight="561.0" prefWidth="692.0" spacing="10.0">
+                     <children>
+                        <HBox prefHeight="45.0" prefWidth="694.0" spacing="10.0">
+                           <children>
+                              <JFXDatePicker fx:id="dpDia" onAction="#dpDia" prefHeight="38.0" prefWidth="186.0" HBox.hgrow="ALWAYS" />
+                              <JFXComboBox fx:id="cbCanchas" labelFloat="true" onAction="#cbCanchas" prefHeight="38.0" prefWidth="156.0" HBox.hgrow="ALWAYS" />
+                              <JFXButton onAction="#btnAtras" prefHeight="39.0" prefWidth="88.0" text="Atras" />
+                              <JFXButton onAction="#btnLimpiar" prefHeight="39.0" prefWidth="97.0" text="Limpiar" />
+                           </children>
+                        </HBox>
+                        <TableView fx:id="tblCanchas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#tbCanchas" prefHeight="465.0" prefWidth="686.0">
+                          <columns>
+                            <TableColumn fx:id="tcHora" prefWidth="95.0" text="Hora" />
+                            <TableColumn fx:id="tcDisponible" prefWidth="140.0" text="Disponible" />
+                              <TableColumn fx:id="tcEquipo" prefWidth="125.0" text="Equipo" />
+                              <TableColumn fx:id="tcEsperaReto" prefWidth="160.0" text="Espera Reto" />
+                              <TableColumn fx:id="tcOponente" prefWidth="165.0" text="Oponente" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="561.0" prefWidth="237.0" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="btninfo" alignment="CENTER" onAction="#btnInfoEquipo" prefHeight="38.0" prefWidth="146.0" text="Informaciòn de equipo" />
+                        <JFXButton fx:id="btnAceptaReto" onAction="#btnAceptaReto" prefHeight="40.0" prefWidth="131.0" text="Aceptar Reto" />
+                        <JFXButton fx:id="btnReservar" onAction="#btnReservar" prefHeight="36.0" prefWidth="131.0" text="Reservar" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

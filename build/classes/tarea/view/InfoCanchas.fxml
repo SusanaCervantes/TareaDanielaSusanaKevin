@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stp_root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="745.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea.Controller.InfoController">
+   <children>
+      <VBox prefHeight="537.0" prefWidth="748.0">
+         <children>
+            <JFXTextField fx:id="txf_usuario" focusColor="#207532" labelFloat="true" prefHeight="24.0" prefWidth="407.0" promptText="Usuario" unFocusColor="#07612d">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="150.0" top="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="txf_contraseña" promptText="Contraseña">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="150.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="txf_nombre" promptText="Nombre de la cancha">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="150.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="txf_telefono" promptText="Telefono">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="150.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="txf_horario" promptText="Horario">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="150.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <HBox prefHeight="29.0" prefWidth="345.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="150.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <JFXTextField fx:id="txf_costo_dia" prefHeight="24.0" prefWidth="358.0" promptText="Costo del día" />
+                  <JFXTextField fx:id="txf_costo_noche" prefHeight="24.0" prefWidth="346.0" promptText="Costo de la noche">
+                     <HBox.margin>
+                        <Insets left="60.0" right="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <JFXTextField fx:id="txf_cant_jugadores" promptText="Cantidad de judadores">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="150.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="txf_direccion" promptText="Dirección">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="150.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+         </children>
+         <StackPane.margin>
+            <Insets right="190.0" />
+         </StackPane.margin>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <StackPane.margin>
+            <Insets left="550.0" />
+         </StackPane.margin>
+         <children>
+            <JFXButton onAction="#evt_Modificar" prefHeight="26.0" prefWidth="121.0" text="Modificar">
+               <VBox.margin>
+                  <Insets bottom="80.0" left="40.0" right="40.0" top="80.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton onAction="#evt_Consultar" prefHeight="26.0" prefWidth="124.0" text="Consultar">
+               <VBox.margin>
+                  <Insets bottom="80.0" left="40.0" right="40.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton ellipsisString="" minHeight="-Infinity" minWidth="-Infinity" onAction="#evt_volver" prefHeight="57.0" prefWidth="62.0">
+               <VBox.margin>
+                  <Insets bottom="80.0" left="70.0" right="40.0" top="90.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../fonts/reply-arrow-filled.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

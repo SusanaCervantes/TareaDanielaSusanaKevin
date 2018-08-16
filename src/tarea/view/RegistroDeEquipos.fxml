@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea.Controller.RegistroDeEquiposController">
+   <children>
+      <Label text="Registro De Equipos">
+         <StackPane.margin>
+            <Insets bottom="350.0" />
+         </StackPane.margin>
+      </Label>
+      <AnchorPane prefHeight="329.0" prefWidth="535.0">
+         <StackPane.margin>
+            <Insets top="50.0" />
+         </StackPane.margin>
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="13.0" prefHeight="325.0" prefWidth="170.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="5.0">
+               <children>
+                  <JFXPasswordField layoutX="10.0" layoutY="55.0" prefHeight="25.0" prefWidth="150.0" promptText="Contraseña" />
+                  <JFXPasswordField layoutX="10.0" layoutY="90.0" prefHeight="25.0" prefWidth="150.0" promptText="Veridicación de contraseña" />
+                  <JFXTextField layoutX="10.0" layoutY="20.0" prefHeight="25.0" prefWidth="150.0" promptText="Nombre de usuario" />
+                  <JFXTextField layoutX="10.0" layoutY="125.0" prefHeight="25.0" prefWidth="150.0" promptText="Nombre de equipo" />
+               </children>
+            </AnchorPane>
+            <JFXButton layoutX="456.0" layoutY="290.0" text="Volver" />
+            <AnchorPane layoutX="203.0" layoutY="5.0" prefHeight="325.0" prefWidth="170.0">
+               <children>
+                  <Label layoutX="8.0" layoutY="-1.0" text="Integrantes (2 mínimo)." />
+                  <JFXTextField layoutX="8.0" layoutY="19.0" prefHeight="25.0" prefWidth="150.0" promptText="Integrante 1" />
+                  <JFXTextField layoutX="8.0" layoutY="54.0" prefHeight="25.0" prefWidth="150.0" promptText="Cel/Tel" />
+                  <JFXButton layoutX="8.0" layoutY="89.0" text="Agregar" />
+                  <Label layoutX="103.0" layoutY="93.0" text="Cantidad: 0" />
+                  <JFXButton layoutX="53.0" layoutY="286.0" text="Registrar" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
